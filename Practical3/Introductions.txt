@@ -1,4 +1,4 @@
-Hello, my name is Rob.
-I like drinking tea and eating chocolate biscuits.
-I am enjoying teaching IBI1 in person again 
+Hello, my name is Hellen.
+I like drinking tea and eating delicious food.
+I am enjoying learning new things 
 I am happy that I can push my repo from Visual Studio Code to GitHub
