@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: how many numbers ("progress" ) of trying until the two random numbers become equal for the first time
+# Answer: how many numbers ("progress" ) of trying until the two random numbers become equal for the first time( What is the first time two random numbers are equal)
 #在第几次时两个随机数第一次相等
 # Import libraries
 # randint allows drawing a random number,
