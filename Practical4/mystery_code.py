@@ -12,7 +12,7 @@ from math import ceil  #？
 
 progress=0
 while progress>=0:
-	progress+=1
+	progress+=1#as a counter
 	first_n = randint(1,6)
 	second_n = randint(1,6)
 	print(first_n,second_n)
