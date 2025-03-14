@@ -13,3 +13,9 @@ X=True
 Y=False
 W=X and Y#False
 print(W)
+#table:
+#X      Y       Z
+#True  True   True
+#True  False  False
+#False True   False
+#False False  False

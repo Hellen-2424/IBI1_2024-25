@@ -3,7 +3,7 @@ w=float(input("weight(kg)="))
 h=float(input("height(m)="))
 #calculate BMI
 bmi=w/h**2
-#find where this specific BMI is and print
+#find where this specific BMI is and print the result
 if 18.5<=bmi<=30:
     print("your BMI is"+str(bmi)+". Congradulations! It's normal weight.")
 elif bmi>30:
