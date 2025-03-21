@@ -25,3 +25,21 @@ plt.show()
 #set the size of the figure:  fig.set_size_inches(10,5)
 #set title: ax1.set_title(...)
 
+
+
+put=[i for i in range(100)]
+out=[]
+n=0
+for i in range(len(put)-6):
+    for j in range(7):
+        n+=put[i+j]
+    n=round(n/7,5)
+    out.append(n)
+    n=0
+print(out)
+#pseudocode:
+#1.use meaningful variable names
+#2.use human language
+#3.
+#method2：用while loop and delete the first number after each loop and use #output=([0]+...+[6])/7
+
