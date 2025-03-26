@@ -29,6 +29,7 @@ for j in range(len(vac)):
             sus.append(sus[-1]-n)
             inf.append(inf[-1]+n-m)
             rec.append(rec[-1]+m)
+        #b=b*inf[-1]/N#calculate the actual infected rate to replace beta：but I think it doesn't fit because the first step would change and destroy it all!!!
     #draw
     time=[p for p in range(x+1)]#add the initial "1"
     plt.plot(time,inf,color=colors[j],label=f"Vaccination Rate: {vac[j]}")#important and remember!!!!!

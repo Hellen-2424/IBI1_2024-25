@@ -24,6 +24,7 @@ for i in range(x):
     sus.append(sus[-1]-n)
     inf.append(inf[-1]+n-m)
     rec.append(rec[-1]+m)
+    b=b*inf[-1]/N#calculate the actual infected rate to replace beta
 #draw
 time=[i for i in range(x+1)]#add the initial "1"
 plt.title("SIR model")

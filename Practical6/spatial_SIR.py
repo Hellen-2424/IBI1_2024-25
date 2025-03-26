@@ -14,7 +14,8 @@ cmap =ListedColormap(['darkviolet', 'turquoise', 'gold', 'lightgreen'])#define t
 #for index in vaccinated_indices:
  #   x,y=index//100,index%100
   #  population[x,y]=3
-fig,axes=plt.subplots(10,10,figsize=(10,10))#fig:the whole figure;axes:a list comtains all the sub figures!!!
+fig,axes=plt.subplots(10,10,figsize=(20,20))#fig:the whole figure;axes:a list comtains all the sub figures!!!
+fig.align_titles()
 for i in range(x): 
     position=np.where(population==1)#for the structure of np.where is [a,b]
     for j in range(len(position[0])):#!!!
@@ -53,7 +54,10 @@ for i in range(x):
     #change it into subplot:!!!!!!!
     ax=axes[i//10,i%10]
     ax.imshow(population,cmap=cmap,interpolation='nearest')
-    ax.set_title(f'Time step:{i}')
+    ax.set_title(f'Time step:{i}',fontsize=6)
     ax.axis('off')
+    #set the fonsize of axis:
+    #ax.tick_params(axis='both', which='major', labelsize=4)
+    #ax.tick_params(axis='both', which='minor', labelsize=2)
 
 plt.show()
