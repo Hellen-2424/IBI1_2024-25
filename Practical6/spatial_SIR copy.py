@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+#from script.? import odeint
 from matplotlib.colors import ListedColormap
 population=np.zeros((100, 100))#set a two-dimensional array filled with all zeros
 b=0.3#beta
@@ -13,8 +14,7 @@ cmap =ListedColormap(['darkviolet', 'turquoise', 'gold', 'lightgreen'])#define t
 #for index in vaccinated_indices:
  #   x,y=index//100,index%100
   #  population[x,y]=3
-fig,axes=plt.subplots(10,10,figsize=(20,20))#fig:the whole figure;axes:a list comtains all the sub figures!!!
-fig.align_titles()
+plt.figure(figsize=(6,4),dpi=150)#fig:the whole figure;axes:a list comtains all the sub figures!!!
 x=100#times
 for i in range(x): 
     position=np.where(population==1)#for the structure of np.where is [a,b]
@@ -52,12 +52,11 @@ for i in range(x):
     #plt.axis('off')
     #plt.show()
     #change it into subplot:!!!!!!!
-    ax=axes[i//10,i%10]
-    ax.imshow(population,cmap=cmap,interpolation='nearest')
-    ax.set_title(f'Time step:{i}',fontsize=6)
-    ax.axis('off')
+    plt.imshow(population,cmap=cmap,interpolation='nearest')
+    plt.title(f'Time step:{i}',fontsize=6)
+    plt.pause(0.1)
+    plt.axis('on')
     #set the fonsize of axis:
     #ax.tick_params(axis='both', which='major', labelsize=4)
     #ax.tick_params(axis='both', which='minor', labelsize=2)
-
 plt.show()
