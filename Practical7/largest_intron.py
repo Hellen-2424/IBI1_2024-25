@@ -7,4 +7,5 @@ count=0#initial and storage the place of longest string
 for i in range(len(find)):
     if len(find[i])>len(find[count]):
         count=i#replace if it is longer(tips:it only contains the first)
+#or can use the function:max(最大值函数)
 print(find,find[count],len(find[count]))
