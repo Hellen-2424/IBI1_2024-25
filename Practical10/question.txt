@@ -1,10 +1,10 @@
-Line38
+Line39
 Q: How has the DALYs changed in England and Iceland over time?
-Line45
+Line47
 Q: How has the DALYs changed in China and Japan over time?
-Line52
+Line55
 Q: What country or countries have recorded a DALYs greater than 650,000 in a single year?
-Line54
+Line57
 Q: Plot a boxplot of DALYs across countries in 1990
 
 

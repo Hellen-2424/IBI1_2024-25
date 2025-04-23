@@ -32,6 +32,7 @@ uk=df.loc[df.Entity=="United Kingdom",["DALYs", "Year"]]
 plt.title("DALYs of UK")
 plt.plot(uk.Year, uk.DALYs, 'b.')
 plt.xticks(uk.Year,rotation=-90)
+plt.grid(True)
 plt.show()
 
 #task 6
@@ -40,6 +41,7 @@ Ice=df.loc[df.Entity=="Iceland",["DALYs", "Year"]]
 plt.title("DALYs of UK and Iceland")
 plt.plot(Ice.Year,Ice.DALYs,"b.")
 plt.plot(uk.Year,uk.DALYs,"r+")
+plt.grid(True)
 plt.show()
 
 Ch=df.loc[df.Entity=="China",["DALYs", "Year"]]
@@ -47,6 +49,7 @@ Ja=df.loc[df.Entity=="Japan",["DALYs", "Year"]]
 plt.title("DALYs of China and Japan")
 plt.plot(Ch.Year,Ch.DALYs,"r.")
 plt.plot(Ja.Year,Ja.DALYs,"b.")
+plt.grid(True)
 plt.show()
 
 print(df[df["DALYs"]>650000]["Entity"])
@@ -55,6 +58,7 @@ plt.title("DALYs in 1990")
 y=df.loc[df.Year==1990,["Entity","DALYs"]]#find data of 1990
 plt.bar(y.Entity,y.DALYs)
 plt.xticks(y.Entity,rotation=-90,fontsize=4)
+plt.grid(True)
 plt.show()
 
 
