@@ -12,13 +12,15 @@ df.info()#print out the basic information of df
 print(df.iloc[2,0:2])
 #print(df.iloc[0:2,:])
 #print(df.iloc[0:10:2,0:5])
-print(df["Year"].head(10))
-print(df.loc[df["Year"]==1990,"DALYs"])
+print(df["Year"].head(10))#comment:10th data:1999
+print(df.loc[df.Year==1990,"DALYs"])
 
 #task 5_1
 F=df[df["Entity"]=="France"]["DALYs"].mean()
 U=df[df["Entity"]=="England"]["DALYs"].mean()
 print("DALYS of France: "+str(F))
+
+
 print("DALYS of UK: "+str(U))
 if F==U:
     print("the mean DALYs in the UK was equal to France")
@@ -44,6 +46,7 @@ plt.plot(uk.Year,uk.DALYs,"r+")
 plt.grid(True)
 plt.show()
 
+
 Ch=df.loc[df.Entity=="China",["DALYs", "Year"]]
 Ja=df.loc[df.Entity=="Japan",["DALYs", "Year"]]
 plt.title("DALYs of China and Japan")
@@ -52,7 +55,7 @@ plt.plot(Ja.Year,Ja.DALYs,"b.")
 plt.grid(True)
 plt.show()
 
-print(df[df["DALYs"]>650000]["Entity"])
+print(df[df["DALYs"]>650000]["Entity"])#可以用tolist()仅取一个entity
 
 plt.title("DALYs in 1990")
 y=df.loc[df.Year==1990,["Entity","DALYs"]]#find data of 1990
