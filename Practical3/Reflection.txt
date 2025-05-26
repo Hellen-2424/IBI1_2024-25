@@ -1,0 +1,4 @@
+This practical helped me understand basic Git commands like `git init`, `git commit`, and branch management. 
+I found merging branches challenging due to conflicts, but resolving them by editing files clarified how version control handles changes.
+I'm still unsure about customizing Jekyll themes beyond the basic steps. 
+Overall, the hands-on experience was valuable for learning version control and website deployment.  
